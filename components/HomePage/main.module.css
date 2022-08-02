@@ -1,0 +1,44 @@
+.main {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+}
+
+.mintBtn {
+  height: 3em;
+  min-width: 8em;
+  margin-top: 2em;
+  border-radius: 25px;
+  background-image: linear-gradient(180deg, #fec313, #e57b57);
+  box-shadow: 0 5px 10px grey;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.mintBtn:hover,
+.mintBtn:active,
+.mintBtn.active {
+  color: black;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+}

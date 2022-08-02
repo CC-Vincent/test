@@ -1,0 +1,18 @@
+.scrollToTopBtn {
+  display: block;
+  z-index: 2;
+  background-image: url("/images/scrollToTop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  box-shadow: 0 0 10px 5px white;
+  border-radius: 45%;
+  opacity: 0.4;
+  cursor: pointer;
+}

@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "custom_Grandstander";
+  src: url("../public/fonts/Grandstander-clean.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #3C455A;
+  font-family: "custom_Grandstander";
+  margin: 0;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e57b57;
+  background-image: linear-gradient(180deg, #fec313, #e57b57);
+  border-radius: 25px;
+}
+
+body.scrollDisabled {
+  overflow: hidden;
+}

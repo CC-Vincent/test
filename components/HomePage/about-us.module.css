@@ -1,0 +1,21 @@
+.aboutUs {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: linear-gradient(180deg, #3C455A, #303451);
+  padding: 8rem 16%;
+  color: white;
+  text-align: center;
+}
+
+.aboutUs > p {
+  margin-top: 4rem;
+  line-height: 1.8rem;
+  word-spacing: 4px;
+}
+
+@media only screen and (max-width: 425px) {
+  .aboutUs > h1 {
+    font-size: 1.6rem;
+  }
+}
