@@ -25,7 +25,7 @@
   position: absolute;
   left: 50%;
   z-index: 2;
-  background-image: url("/images/cat.png");
+  background-image: url("/images/cat animation/0.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

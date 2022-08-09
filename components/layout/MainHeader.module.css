@@ -88,7 +88,7 @@
   }
   .header ul {
     display: flex;
-    background-image: linear-gradient(135deg, white, black);
+    background-image: linear-gradient(135deg, #231c44, white);
     position: absolute;
     height: 0%;
     width: 0%;
