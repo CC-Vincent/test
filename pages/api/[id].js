@@ -4,9 +4,14 @@ import fs from "fs";
 export default async function handler(req, res) {
   if (req.method === "GET") {
     try {
+      const dev = process.env.NODE_ENV !== "production";
+      const server = dev
+        ? "http://localhost:3000"
+        : "https://portfolio-2022-steel-chi.vercel.app";
+
       const { id } = req.query;
 
-      const response = await fetch(`http://localhost:3000/api/metadata/${id}`);
+      const response = await fetch(`${server}/api/metadata/${id}`);
 
       if (response.status != 200) {
         res.status(response.status).json({ message: response.statusText });
