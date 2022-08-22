@@ -15,11 +15,14 @@ export default async function handler(req, res) {
         const data = JSON.parse(fileContents);
 
         res.status(200).json(data);
+        res.end();
       } else {
         res.status(404).json({ message: "Not Found" });
+        res.end();
       }
     } catch (err) {
       res.status(400).json({ message: err });
+      res.end();
     }
   }
 
