@@ -7,7 +7,7 @@ export default async function handler(req, res) {
       const dev = process.env.NODE_ENV !== "production";
       const server = dev
         ? "http://localhost:3000"
-        : "https://portfolio-2022-steel-chi.vercel.app";
+        : "https://test-inky-alpha-86.vercel.app";
 
       const { id } = req.query;
 
