@@ -36,7 +36,7 @@ export default async function handler(req, res) {
         res.status(404).json({ message: "Not Found" });
       }
 
-      const filePath = path.join(process.cwd(), filename);
+      const filePath = path.join(process.cwd(), `public/${filename}`);
       const buffer = fs.readFileSync(filePath);
 
       res.setHeader("Content-Type", contentType);
