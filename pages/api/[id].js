@@ -1,16 +1,16 @@
 import path from "path";
 import fs from "fs";
 
+const dev = process.env.NODE_ENV !== "production";
+const server = dev
+  ? "http://localhost:3000"
+  : "https://test-inky-alpha-86.vercel.app";
+
 export default async function handler(req, res) {
   if (req.method === "GET") {
     try {
-      const dev = process.env.NODE_ENV !== "production";
-      const server = dev
-        ? "http://localhost:3000"
-        : "https://test-inky-alpha-86.vercel.app";
-
       const { id } = req.query;
-
+      
       const response = await fetch(`${server}/api/metadata/${id}`);
 
       if (response.status != 200) {
