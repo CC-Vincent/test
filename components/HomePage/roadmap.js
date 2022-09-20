@@ -112,7 +112,7 @@ export default function Roadmap() {
         <Swiper
           freeMode={{
             enabled: true,
-            momentum: true,
+            momentum: false,
           }}
           mousewheel={false}
           grabCursor={true}
